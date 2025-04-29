@@ -43,7 +43,8 @@
 [+] Password found: letmein
 ```
 # code overview
-```import pikepdf
+```python
+import pikepdf
 from tqdm import tqdm
 import itertools
 import string
@@ -122,6 +123,19 @@ if __name__ == "__main__":
     else:
         print("Unable to decrypt PDF. Password not found.")
 ```
+
+# Installation Process 
+### Termux
+```apt-get update && apt-get upgrade
+apt-get install python3
+apt-get install git
+git clone https://github.com/arasu404/pdf_decryption.git
+cd pdf_decryption
+```
+
+
+
+
 
 # notes 
 - This tool uses a dictionary attack — it cannot brute-force every possible password without a huge wordlist.
